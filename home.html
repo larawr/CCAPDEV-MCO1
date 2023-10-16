@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="active"><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <h1>Forum Website</h1>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h2>Welcome to our Forum</h2>
+            <p>We are a community of developers sharing knowledge and ideas about web development. Join us today and enhance your skills.</p>
+            <a href="register" class="cta-button">Register Now</a>
+        </section>
+
+        <section class="recent-posts-section">
+            <h2>Recent Posts</h2>
+
+            <form class="search-form" action="#" method="GET">
+                <label for="search-input">Search Posts:</label>
+                <input type="text" id="search-input" name="search-input" placeholder="Enter a keyword...">
+                <button type="submit" name="search-button">Search</button>
+            </form>
+
+            <ul class="post-list">
+                <li>
+                    <h3><a href="#">How to learn web development from scratch?</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ornare urna, eu dictum risus. Aenean sed quam sed augue feugiat mollis.</p>
+                    <span class="post-meta">Posted by <a href="#">John Doe</a> on 2021-10-15</span>
+                    <div class="post-actions">
+                        <form class="vote-form" action="#" method="POST">
+                            <input type="hidden" name="post-id" value="123">
+                            <button type="submit" name="upvote-post"><i class="fas fa-chevron-up"></i></button>
+                            <span class="vote-count">5</span>
+                            <button type="submit" name="downvote-post"><i class="fas fa-chevron-down"></i></button>
+                        </form>
+                        <a href="#">Reply</a>
+                    </div>
+                </li>
+
+                <li>
+                    <h3><a href="#">Tips for debugging JavaScript</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ornare urna, eu dictum risus. Aenean sed quam sed augue feugiat mollis.</p>
+                    <span class="post-meta">Posted by <a href="#">Jane Smith</a> on 2021-10-14</span>
+                    <div class="post-actions">
+                        <form class="vote-form" action="#" method="POST">
+                            <input type="hidden" name="post-id" value="456">
+                            <button type="submit" name="upvote-post"><i class="fas fa-chevron-up"></i></button>
+                            <span class="vote-count">3</span>
+                            <button type="submit" name="downvote-post"><i class="fas fa-chevron-down"></i></button>
+                        </form>
+                        <a href="#">Reply</a>
+                    </div>
+                </li>
+
+                <li>
+                    <h3><a href="#">Best CSS frameworks for responsive design</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ornare urna, eu dictum risus. Aenean sed quam sed augue feugiat mollis.</p>
+                    <span class="post-meta">Posted by <a href="#">Mark Johnson</a> on 2021-10-13</span>
+                    <div class="post-actions">
+                        <form class="vote-form" action="#" method="POST">
+                            <input type="hidden" name="post-id" value="789">
+                            <button type="submit" name="upvote-post"><i class="fas fa-chevron-up"></i></button>
+                            <span class="vote-count">6</span>
+                            <button type="submit" name="downvote-post"><i class="fas fa-chevron-down"></i></button>
+                        </form>
+                        <a href="#">Reply</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2021 Forum Website. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/69c55ad5c0.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit / Delete Post - Forum Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <h1>Edit / Delete Post</h1>
+    </header>
+
+    <section class="container">
+        <form class="post-form" action="#" method="POST">
+            <label for="post-title">Title:</label>
+            <input type="text" name="post-title" id="post-title" value="Title of the Post" required>
+
+            <label for="post-body">Body:</label>
+            <textarea name="post-body" id="post-body" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ornare urna, eu dictum risus. Aenean sed quam sed augue feugiat mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam id rutrum libero. Nunc vel odio euismod nisl malesuada elementum id eu tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec malesuada ullamcorper tortor, quis blandit nibh consequat quis. Quisque semper feugiat sapien, vitae consequat magna commodo et. Donec rutrum a mi at blandit.</textarea>
+
+            <button type="submit" name="edit-post">Save Changes</button>
+        </form>
+
+        <form class="delete-form" action="#" method="POST">
+            <button type="submit" name="delete-post">Delete Post</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2021 Forum Website. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/69c55ad5c0.js" crossorigin="anonymous"></script>
+</body>
+</html>

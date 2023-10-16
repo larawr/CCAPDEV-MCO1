@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit / Delete Comment - Forum Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <h1>Edit / Delete Comment</h1>
+    </header>
+
+    <section class="container">
+        <form class="comment-form" action="#" method="POST">
+            <label for="comment-body">Comment:</label>
+            <textarea name="comment-body" id="comment-body" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ornare urna, eu dictum risus. Aenean sed quam sed augue feugiat mollis.</textarea>
+
+            <button type="submit" name="edit-comment">Save Changes</button>
+        </form>
+
+        <form class="delete-form" action="#" method="POST">
+            <button type="submit" name="delete-comment">Delete Comment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2021 Forum Website. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/69c55ad5c0.js" crossorigin="anonymous"></script>
+</body>
+</html>

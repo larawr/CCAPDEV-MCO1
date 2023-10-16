@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comment on Post - Forum Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <h1>Comment on Post</h1>
+    </header>
+
+    <section class="container">
+        <article class="post">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ornare urna, eu dictum risus. Aenean sed quam sed augue feugiat mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam id rutrum libero. Nunc vel odio euismod nisl malesuada elementum id eu tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec malesuada ullamcorper tortor, quis blandit nibh consequat quis. Quisque semper feugiat sapien, vitae consequat magna commodo et. Donec rutrum a mi at blandit.</p>
+        </article>
+
+        <h2>Comments</h2>
+
+        <ul class="comments">
+            <li class="comment">
+                <p><strong>Commenter1:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ornare urna, eu dictum risus.</p>
+
+                <ul class="subcomments">
+                    <li class="comment">
+                        <p><strong>Commenter2:</strong> Aenean sed quam sed augue feugiat mollis.</p>
+
+                        <ul class="subcomments">
+                            <li class="comment">
+                                <p><strong>Commenter1:</strong> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="comment">
+                <p><strong>Commenter3:</strong> Nam id rutrum libero. Nunc vel odio euismod nisl malesuada elementum id eu tellus.</p>
+            </li>
+        </ul>
+
+        <form class="comment-form" action="#" method="POST">
+            <label for="comment-body">Leave a comment:</label>
+            <textarea name="comment-body" id="comment-body" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2021 Forum Website. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/69c55ad5c0.js" crossorigin="anonymous"></script>
+</body>
+</html>
