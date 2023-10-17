@@ -1,0 +1,14 @@
+[
+    {
+        "accountID": 0,
+        "username": "TechW",
+        "description": "They see me Coding, They Hatin",
+        "posts": [0],
+        "comments":[
+            {
+                "postID": 1,
+                "comment_num": 0
+            }
+        ]
+    }
+]
