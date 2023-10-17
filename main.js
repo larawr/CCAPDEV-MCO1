@@ -1,4 +1,4 @@
-[
+var posts = [
     {
         "postID": 0,
         "accountID": 0,
@@ -36,3 +36,30 @@
         ]
     }
 ]
+
+var accounts = [
+    {
+        "accountID": 0,
+        "displayname": "TechW",
+        "description": "They see me Coding, They Hatin",
+        "posts": [0],
+        "comments":[
+            {
+                "postID": 1,
+                "comment_num": 0
+            }
+        ],
+        "credentials": {
+            "username": "TechW",
+            "password": "12345"
+        }
+    }
+]
+
+function moveToPost(postID){
+    window.location.href = `viewpost.html?postID=${postID}`;
+}
+
+function getPosts(){
+    return posts
+}
