@@ -13,7 +13,7 @@
             if(accountID != null){
                 const account = accounts[accountID]
                 $("#title-head").html(account.displayname)
-                $("#title-head").attr("onclick", "./viewprofile.html?accountID")
+                $("#title-head").attr("onclick", `moveToProfile(${accountID})`)
             }
         })
 

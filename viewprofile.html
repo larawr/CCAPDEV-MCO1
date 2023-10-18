@@ -13,7 +13,9 @@
             const account = accounts[accountID]
 
             console.log(accountID)
-            $("#user-pfp").attr("src",`./pfp/${accountID}.png`);
+            $("#user-pfp").attr("src",`./pfp/${accountID}.png`)
+            $(".user-description h2").html(account.displayname)
+            $(".user-description p").html(account.description)
         })
     </script>
 </head>
@@ -35,8 +37,8 @@
                 <img alt="Profile Picture" id="user-pfp">
             </div>
             <div class="user-description">
-                <h2>JohnDoe</h2>
-                <p>Here's a short description about JohnDoe. It can be a few sentences long and provide a brief overview of JohnDoe's interests, hobbies, or profession.</p>
+                <h2></h2>
+                <p></p>
             </div>
         </section>
 
