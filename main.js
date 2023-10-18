@@ -27,11 +27,6 @@ var posts = [
                 "accountID": 4,
                 "body": "Definitely Java and use NetBeans for your IDE",
                 "datetime": "20231005T114143-0400"
-            },
-            {   
-                "accountID": 5,
-                "body": "There are many possible languages you can use and there are languages that are better in some scenarios. Generally, I would say study python as it's a good prototyping language but I would also like to mention Javascript as it's very versatile as well and there are a lot of users so there are a lot of different libraries.",
-                "datetime": "20231005T120543-0400"
             }
         ]
     }
@@ -53,6 +48,70 @@ var accounts = [
             "username": "TechW",
             "password": "12345"
         }
+    },
+    {
+        "accountID": 1,
+        "displayname": "Weismann",
+        "description": "They see me Coding, They Hatin",
+        "posts": [1],
+        "comments":[
+            {
+                "postID": 0,
+                "comment_num": 0
+            }
+        ],
+        "credentials": {
+            "username": "Weismann",
+            "password": "12345"
+        }
+    },
+    {
+        "accountID": 2,
+        "displayname": "Alandal",
+        "description": "They see me Coding, They Hatin",
+        "posts": [2],
+        "comments":[
+            {
+                "postID": 0,
+                "comment_num": 1
+            }
+        ],
+        "credentials": {
+            "username": "Alandal",
+            "password": "12345"
+        }
+    },
+    {
+        "accountID": 3,
+        "displayname": "Skipee",
+        "description": "They see me Coding, They Hatin",
+        "posts": [3],
+        "comments":[
+            {
+                "postID": 0,
+                "comment_num": 2
+            }
+        ],
+        "credentials": {
+            "username": "Skipee",
+            "password": "12345"
+        }
+    },
+    {
+        "accountID": 4,
+        "displayname": "Findo",
+        "description": "They see me Coding, They Hatin",
+        "posts": [4],
+        "comments":[
+            {
+                "postID": 1,
+                "comment_num": 3
+            }
+        ],
+        "credentials": {
+            "username": "Findo",
+            "password": "12345"
+        }
     }
 ]
 
@@ -60,6 +119,6 @@ function moveToPost(postID){
     window.location.href = `viewpost.html?postID=${postID}`;
 }
 
-function getPosts(){
-    return posts
+function moveToProfile(accountID){
+    window.location.href = `viewprofile.html?accountID=${accountID}`;
 }

@@ -6,17 +6,31 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            const urlParams = new URLSearchParams(window.location.search)
+            const accountID = urlParams.get('accountID')
+            if(accountID != null){
+                const account = accounts[accountID]
+                $("#title-head").html(account.displayname)
+                $("#title-head").attr("onclick", "./viewprofile.html?accountID")
+            }
+        })
+
+        $()
+    </script>
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li class="active"><a href="home.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html" id="login">Login</a></li>
+                <li><a href="register.html" id="register">Register</a></li>
+                <li><a href="logout.html" id="logout" style="display: none;">Logoute</a></li>
             </ul>
         </nav>
-        <h1>Forum Website</h1>
+        <h1 id="title-head">Forum Website</h1>
     </header>
 
     <main>
@@ -52,7 +66,7 @@
                 </li>
 
                 <li>
-                    <h3><a href="#">Tips for debugging JavaScript</a></h3>
+                    <h3><a href="#" onclick="moveToPost(1)">Tips for debugging JavaScript</a></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ornare urna, eu dictum risus. Aenean sed quam sed augue feugiat mollis.</p>
                     <span class="post-meta">Posted by <a href="#">Jane Smith</a> on 2021-10-14</span>
                     <div class="post-actions">
@@ -67,7 +81,7 @@
                 </li>
 
                 <li>
-                    <h3><a href="#">Best CSS frameworks for responsive design</a></h3>
+                    <h3><a href="#" onclick="moveToPost(2)">Best CSS frameworks for responsive design</a></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ornare urna, eu dictum risus. Aenean sed quam sed augue feugiat mollis.</p>
                     <span class="post-meta">Posted by <a href="#">Mark Johnson</a> on 2021-10-13</span>
                     <div class="post-actions">

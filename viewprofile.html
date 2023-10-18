@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <title>User Profile - JohnDoe</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $( document ).ready(function(){
+            const urlParams = new URLSearchParams(window.location.search)
+            const accountID = urlParams.get('accountID')
+            const account = accounts[accountID]
+
+            console.log(accountID)
+            $("#user-pfp").attr("src",`./pfp/${accountID}.png`);
+        })
+    </script>
 </head>
 <body>
     <header>
@@ -14,13 +26,13 @@
                 <li><a href="register.html">Register</a></li>
             </ul>
         </nav>
-        <h1>User Profile - JohnDoe</h1>
+        <h1 id = "header">User Profile - </h1>
     </header>
 
     <section class="container">
         <section class="user-info">
             <div class="user-image">
-                <img src="john-doe-profile.jpg" alt="Profile Picture">
+                <img alt="Profile Picture" id="user-pfp">
             </div>
             <div class="user-description">
                 <h2>JohnDoe</h2>

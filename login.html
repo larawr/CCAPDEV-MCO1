@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>Login - Forum Website</title>
     <link rel="stylesheet" href="loginstyles.css">
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        accountID = 0
+        $(document).ready(function(){
+            $('form').attr("action", `./home.html?accountID=${accountID}`)
+        })
+    </script>
 </head>
 <body>
     <header>
@@ -18,7 +26,7 @@
     </header>
 
     <section class="container">
-        <form class="login-form" action="#" method="POST">
+        <form class="login-form" method="POST">
             <label for="username">Username:</label>
             <input type="text" name="username" id="username">
 
