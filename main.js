@@ -29,7 +29,127 @@ var posts = [
                 "datetime": "20231005T114143-0400"
             }
         ]
-    }
+    }, {
+    "postID": 1,
+    "accountID": 1,
+    "title": "Tips for debugging JavaScript",
+    "body": "Do you have any tips on debugging JavaScript? My mind is going crazy because of some bugs I can't find",
+    "postedon": "20231005T104523-0400",
+    "lastupdate": "20231005T120543-0400",
+    "votes": 36,
+    "replies":[
+        {
+            "accountID": 0,
+            "body": "You can use console.log() to check if your code works",
+            "datetime": "20231005T104523-0400"
+        },
+        {   
+            "accountID": 3,
+            "body": "Use Breakpoints in the Browser Debugger: You can set breakpoints in your code, which will pause execution at that point, allowing you to inspect the current state.",
+            "datetime": "20231005T113523-0400"
+        },
+        {   
+            "accountID": 2,
+            "body": "Use the JavaScript debugger Statement: Similar to breakpoints, you can place a debugger; line in your code. Chrome will automatically stop there when executing2..",
+            "datetime": "20231005T114043-0400"
+        },
+        {   
+            "accountID": 4,
+            "body": "Utilize Error Messages for Bug Identification: Pay close attention to any error messages that appear in your console, as they can provide valuable clues about what’s going wrong1.",
+            "datetime": "20231005T114143-0400"
+        }
+    ]
+    }, {
+        "postID": 2,
+        "accountID": 2,
+        "title": "Best CSS frameworks for responsive design",
+        "body": "What is the best CSS framework for responsive design you use? Im currently using Boostrap",
+        "postedon": "20231005T104523-0400",
+        "lastupdate": "20231005T120543-0400",
+        "votes": 37,
+        "replies":[
+            {
+                "accountID": 0,
+                "body": "In my 10 years of experience I use Bootsrap and i haven't encountered some problems",
+                "datetime": "20231005T104523-0400"
+            },
+            {   
+                "accountID": 1,
+                "body": "I Agree With TechW I also use Bootstrap",
+                "datetime": "20231005T113523-0400"
+            },
+            {   
+                "accountID": 3,
+                "body": "For me, Tailwind - Tailwind offers a modern utility-based approach for building responsive sites. It has a vast amount of utility classes that can let you build modern websites without writing CSS.",
+                "datetime": "20231005T114043-0400"
+            },
+            {   
+                "accountID": 4,
+                "body": "I used Tachyons this is another utility-based CSS library that does the heavy lifting of offering many styles out of the box so you don’t need to write a lot of CSS yourself.",
+                "datetime": "20231005T114143-0400"
+            }
+        ]
+        }, {
+            "postID": 3,
+            "accountID": 3,
+            "title": "Python vs Java for Web Development",
+            "body": "Hello, I'm new to web development and trying to decide whether to learn Python (Django/Flask) or Java (Spring) for backend development. Can anyone provide some pros and cons for both? Thanks!",
+            "postedon": "20231005T104523-0400",
+            "lastupdate": "20231005T120543-0400",
+            "votes": 38,
+            "replies":[
+                {
+                    "accountID": 0,
+                    "body": "I've worked with both and I personally prefer Python (Django/Flask). It's easier to learn and the syntax is cleaner.",
+                    "datetime": "20231005T104523-0400"
+                },
+                {   
+                    "accountID": 1,
+                    "body": "Java (Spring) is a robust language and it's widely used in large scale applications. If you're planning to work in a big tech company, having Java in your skill set could be beneficial.",
+                    "datetime": "20231005T113523-0400"
+                },
+                {   
+                    "accountID": 2,
+                    "body": "If you're new to programming, I would recommend Python because of its simplicity. However, learning Java will give you a deeper understanding of programming concepts.",
+                    "datetime": "20231005T114043-0400"
+                },
+                {   
+                    "accountID": 4,
+                    "body": "In terms of performance, Java is generally faster. However, Python is usually more than fast enough for web development and its simplicity can lead to faster development times.",
+                    "datetime": "20231005T114143-0400"
+                }
+            ]
+            }, {
+                "postID": 4,
+                "accountID": 4,
+                "title": "Cybersecurity Resources Needed",
+                "body": "Greetings everyone, I'm looking to learn more about cybersecurity. Can anyone recommend some good online courses, books, or other resources? Your help would be greatly appreciated!",
+                "postedon": "20231005T104523-0400",
+                "lastupdate": "20231005T120543-0400",
+                "votes": 36,
+                "replies":[
+                    {
+                        "accountID": 0,
+                        "body": "I would recommend the Introduction to Cybersecurity course on Coursera. It's a great starting point for beginners and covers a wide range of topics.",
+                        "datetime": "20231005T104523-0400"
+                    },
+                    {   
+                        "accountID": 1,
+                        "body": "Check out the cybersecurity courses on edX. They have a variety of courses ranging from beginner to advanced levels.",
+                        "datetime": "20231005T113523-0400"
+                    },
+                    {   
+                        "accountID": 2,
+                        "body": "The Art of Invisibility by Kevin Mitnick is a great book that provides real-world examples and practical advice on cybersecurity.",
+                        "datetime": "20231005T114043-0400"
+                    },
+                    {   
+                        "accountID": 3,
+                        "body": "For hands-on practice, try Hack The Box. It's an online platform that allows you to test your penetration testing skills.",
+                        "datetime": "20231005T114143-0400"
+                    }
+                ]
+                }
 ]
 
 var accounts = [

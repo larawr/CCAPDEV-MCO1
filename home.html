@@ -37,7 +37,7 @@
         <section class="hero-section">
             <h2>Welcome to our Forum</h2>
             <p>We are a community of developers sharing knowledge and ideas about web development. Join us today and enhance your skills.</p>
-            <a href="register" class="cta-button">Register Now</a>
+            <a href="register.html" class="cta-button">Register Now</a>
         </section>
 
         <section class="recent-posts-section">
@@ -94,6 +94,37 @@
                         <a href="#">Reply</a>
                     </div>
                 </li>
+
+                <li>
+                    <h3><a href="#" onclick="moveToPost(3)">Python vs Java for Web Development</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ornare urna, eu dictum risus. Aenean sed quam sed augue feugiat mollis.</p>
+                    <span class="post-meta">Posted by <a href="#">Marquus Peterson</a> on 2021-10-12</span>
+                    <div class="post-actions">
+                        <form class="vote-form" action="#" method="POST">
+                            <input type="hidden" name="post-id" value="321">
+                            <button type="submit" name="upvote-post"><i class="fas fa-chevron-up"></i></button>
+                            <span class="vote-count">9</span>
+                            <button type="submit" name="downvote-post"><i class="fas fa-chevron-down"></i></button>
+                        </form>
+                        <a href="#">Reply</a>
+                    </div>
+                </li>
+
+                <li>
+                    <h3><a href="#" onclick="moveToPost(4)">Cybersecurity Resources Needed</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ornare urna, eu dictum risus. Aenean sed quam sed augue feugiat mollis.</p>
+                    <span class="post-meta">Posted by <a href="#">Stella Smith</a> on 2021-10-11</span>
+                    <div class="post-actions">
+                        <form class="vote-form" action="#" method="POST">
+                            <input type="hidden" name="post-id" value="654">
+                            <button type="submit" name="upvote-post"><i class="fas fa-chevron-up"></i></button>
+                            <span class="vote-count">8</span>
+                            <button type="submit" name="downvote-post"><i class="fas fa-chevron-down"></i></button>
+                        </form>
+                        <a href="#">Reply</a>
+                    </div>
+                </li>
+
             </ul>
         </section>
     </main>
