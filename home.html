@@ -8,16 +8,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            const urlParams = new URLSearchParams(window.location.search)
-            const accountID = urlParams.get('accountID')
+            const urlParams = new URLSearchParams(window.location.search);
+            const accountID = urlParams.get('accountID');
             if(accountID != null){
-                const account = accounts[accountID]
-                $("#title-head").html(account.displayname)
-                $("#title-head").attr("onclick", `moveToProfile(${accountID})`)
+                const account = accounts[accountID];
+                $("#title-head").html(account.displayname);
+                $("#title-head").attr("onclick", `moveToProfile(${accountID})`);
             }
-        })
 
-        $()
+            $(".post-list").on("click", "a.edit-post-link", function (event) {
+                event.preventDefault();
+                moveToEditPost();
+            });
+
+            $(".post-list").on("click", "a.post-link", function (event) {
+                event.preventDefault();
+                const postID = $(this).data("post-id");
+                moveToPost(postID);
+            });
+        });
     </script>
 </head>
 <body>
@@ -63,8 +72,8 @@
                             <span class="vote-count">5</span>
                             <button type="submit" name="downvote-post"><img src="downvote.png" alt="Downvote"></button>
                         </form>
-                        <a href="#">Reply</a>
-                        <a href="editpost.html">Edit Post</a>
+                        <a href="#" onclick="movetoPost(0)">Reply</a>
+                        <a href="#" onclick="movetoEditPost()">Edit Post</a>
                     </div>
                 </li>
 
@@ -79,8 +88,8 @@
                             <span class="vote-count">3</span>
                             <button type="submit" name="downvote-post"><img src="downvote.png" alt="Downvote"></button>
                         </form>
-                        <a href="#">Reply</a>
-                        <a href="editpost.html">Edit Post</a>
+                        <a href="#" onclick="movetoPost(0)">Reply</a>
+                        <a href="#" onclick="movetoEditPost()">Edit Post</a>
                     </div>
                 </li>
 
@@ -95,8 +104,8 @@
                             <span class="vote-count">6</span>
                             <button type="submit" name="downvote-post"><img src="downvote.png" alt="Downvote"></button>
                         </form>
-                        <a href="#">Reply</a>
-                        <a href="editpost.html">Edit Post</a>
+                        <a href="#" onclick="movetoPost(0)">Reply</a>
+                        <a href="#" onclick="movetoEditPost()">Edit Post</a>
                     </div>
                 </li>
 
@@ -111,8 +120,8 @@
                             <span class="vote-count">9</span>
                             <button type="submit" name="downvote-post"><img src="downvote.png" alt="Downvote"></button>
                         </form>
-                        <a href="#">Reply</a>
-                        <a href="editpost.html">Edit Post</a>
+                        <a href="#" onclick="movetoPost(0)">Reply</a>
+                        <a href="#" onclick="movetoEditPost()">Edit Post</a>
                     </div>
                 </li>
 
@@ -127,8 +136,8 @@
                             <span class="vote-count">8</span>
                             <button type="submit" name="downvote-post"><img src="downvote.png" alt="Downvote"></button>
                         </form>
-                        <a href="#">Reply</a>
-                        <a href="editpost.html">Edit Post</a>
+                        <a href="#" onclick="movetoPost(0)">Reply</a>
+                        <a href="#" onclick="movetoEditPost()">Edit Post</a>
                     </div>
                 </li>
 
