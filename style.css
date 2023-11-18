@@ -143,6 +143,15 @@ a.cta-button:hover {
     font-size: 24px;
     color: #bbb;
     margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Styles for upvote and downvote buttons */
+.post-list li .vote-form button img {
+    background: url(upvote.png) no-repeat;
+    width: 16px; 
+    height: 16px; 
+    background-size: 16px 16px; /* Ensure background size matches the icon size */
 }
 
 .post-list li .vote-form button:hover,
@@ -153,7 +162,7 @@ a.cta-button:hover {
 .post-list li .vote-form .vote-count {
     font-size: 18px;
     font-weight: bold;
-    margin-right: 10px;
+    margin: 0 5px;
 }
 
 .post-list li a {
