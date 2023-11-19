@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FF8F8F;
+}
+
+nav ul li.active a {
+    color: #EA6B6B;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.container img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+#post_body {
+    margin-top: 20px;
+}
+
+.comments {
+    list-style: none;
+    padding: 0;
+}
+
+.comments li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.comments li a {
+    color: #EA6B6B; /* Set the default color for the edit comment link */
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.comments li a:hover {
+    color: #FF8F8F; /* Change the color on hover */
+}
+
+.comment-form {
+    margin-top: 20px;
+}
+
+.comment-form label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.comment-form button {
+    background-color: #EA6B6B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #FF8F8F;
+}
+
+footer {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}

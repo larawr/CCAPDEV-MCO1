@@ -1,0 +1,166 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FF8F8F;
+}
+
+nav ul li.active a {
+    color: #EA6B6B;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-image img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.user-description {
+    text-align: left;
+}
+
+.user-description h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.user-description p {
+    margin: 10px 0;
+}
+
+.user-activities {
+    text-align: left;
+}
+
+.user-activities h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FF8F8F;
+}
+
+.user-activity-list {
+    list-style: none;
+    padding: 0;
+}
+
+.user-activity-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.user-activity-list li h4 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.user-activity-list li p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.view-all {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .user-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .user-image img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
