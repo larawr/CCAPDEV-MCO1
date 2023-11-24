@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - pinkkit</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        accountID = 0
+        $(document).ready(function(){
+            $('form').attr("action", `./home.html?accountID=${accountID}`)
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="logout.html" id="logout">Logout</a></li>
+		        <li><a href="editprofile.html" id="editprofile">Edit Profile</a></li>
+            </ul>
+        </nav>
+        <h1>Login to Your Account</h1>
+    </header>
+
+    <section class="container">
+        <form class="login-form" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+
+            <label for="remember-me">Remember Me:</label>
+            <input type="checkbox" name="remember-me" id="remember-me">
+
+            <input type="submit" value="Login">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 pinkkit. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/69c55ad5c0.js" crossorigin="anonymous"></script>
+</body>
+</html>
