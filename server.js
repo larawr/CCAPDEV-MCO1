@@ -1,16 +1,45 @@
-// Import required modules
+// npm modules
+const dotenv = require('dotenv');
+dotenv.config();
 const express = require('express');
+const exphbs = require('express-handlebars');
 
-// Create an instance of Express
-const app = express();
+const connect = require('./src/models/db.js');
+const router = require('./src/routes/router.js');
 
-// Define a route
-app.get('/', (req, res) => {
-  res.send('Hello, this is your Node.js server!');
-});
+async function main() {
+    const app = express();
 
-// Set up the server to listen on a specific port
-const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+    app.use('/static', express.static('public'));
+
+    app.engine("hbs", exphbs.engine({
+        extname: "hbs", 
+        helpers: {
+            formatDate: function(date) {
+                return `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`;
+            }
+        }
+    }));
+    app.set("view engine", "hbs");
+    app.set("views", "./src/views");
+
+    // Parse request body as json
+    app.use(express.json());
+    // Apply routes to express app
+    app.use(router);
+
+    app.listen(process.env.SERVER_PORT, async function() {
+        console.log(`express app is now listening on port ${process.env.SERVER_PORT}`);
+        try {
+            await connect();
+            console.log(`Now connected to MongoDB`);
+
+        } catch (err) {
+            console.log('Connection to MongoDB failed: ');
+            console.error(err);
+        }
+    });
+}
+
+
+main();
