@@ -6,6 +6,6 @@
 
 3.) on the command line: npm install
 
-4.) type <npm start> on the command line
+4.) type "npm start" on the command line
 
 5.) Navigate to the project through: http://localhost:3000
